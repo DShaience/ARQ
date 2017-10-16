@@ -86,10 +86,10 @@ mpich2 enabled (with BLCR)
 Cluster Mode Enabled
 
 BUG-FIXES	1.05	02.01.2011
-* Updated Write_Queue() to work with new #####Version of mpich2 (with BLCR)
+* Updated Write_Queue() to work with new version of mpich2 (with BLCR)
 
 BUG-FIXES	1.04	09.12.2010
-* Updated Write_Queue() to work with new #####Version of mpich2
+* Updated Write_Queue() to work with new version of mpich2
 
 BUG-FIXES	1.03	23.11.2010
 * Cluster Jobs that were finished did not free-up the node. Added smpd "-shutdown" to .sge file to force shutdown of smpd 
