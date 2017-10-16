@@ -1,0 +1,42 @@
+#         ARQ Parameter File	 Version 2.01
+#-------------------------------------------------
+# Written in Tel Aviv University, Faculty of Life Sciences, Department of Biochemistry
+# Email: [Censored]
+
+
+resume=yes
+runtype=Desktop
+extend=5
+genname=Grom4Test
+ncpus=4
+nice=19
+runnumber=1
+email=none
+starttime=0
+counter=40
+gromacsver=4
+
+# Basic instructions for each field. Note that the field themselves are case-insensitive, but some of the values may be case-sesitive (filenames, etc.)
+# RunType:	'Hemi' (without quotes). You can use 'light' option for light queue.
+#          	'Desktop' option runs of desktop computers. Tested for CentOS and Ununtu.
+# GenName: 	Prefix name for all files created by the simulations. This should also be the base-name of the first tpr file.
+#          	For example GenName=Test means Test.tpr file must be at the same directory as NewARQ at initiation.
+#	        NewARQ adds GenNames with RunNumber automatically. 
+# NCPUS: 	Number of cpus. This number can be adjusted with each iteration. Immidiately after running NewARQ it will also create
+#        	param.arq file to be used on the next iteration. Before the next iteration arrives, NCPUS value may be changed.
+# Nice: 	Nice Level. In cluster jobs nice is automatically set to 0. 
+# RunNumber:Keeps track of how many iterations of ARQ were. Normally this should be set to 1 on the first iteration
+#           This number will be added as suffix to all simulation file names: GenName-RunNumber.
+# Email: 	If your system supports it, NewARQ may send notification email after each iteration is completed.
+#        	If your system does not support mail, or you prefer to disable mail, please specify 'none'.
+# StartTime:Keeps track of total simulation time up-till-now. Normally this should be set to 0 on the first iteration
+#           ***Time is [ns]***.
+# Extend: 	***Time in [ps]*** to extend simulation in each iteration. This is an adjustable parameter (See NCPUS).
+# Counter: 	This is the number of times (iterations) NewARQ will perform.
+# GromacsVer:	This value can be 4 or 45 to use GROMACS 4.0.x or 4.5.x, respectively. 
+#             	Note that system environment must be set to use the proper version of GROMACS.
+# Resume:	'yes'/'no'. If a simulation stopped in the middle, 'yes' (default option) will use the .cpt file to resume the simulation.
+#         	NOTE that you need to rename the .tpr file to be GenName.tpr *and* to make sure the other stuff in param.arq is correct (starttime, runnumber.. etc)
+#         	Since version 2.x the script 'resume=yes' is default)
+
+
