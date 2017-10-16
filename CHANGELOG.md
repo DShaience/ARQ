@@ -63,11 +63,11 @@ Version 	1.08	26.05.2011
 
 Version 	1.07	28.01.2011
 * IMPORTANT: "cluster" option was substituted by "hemi". Now you must write "runtype=hemi" for the cluster option.
-#	This change makes it easier to implement more queue-types (such as light).
+	This change makes it easier to implement more queue-types (such as light).
 * Added runtype=light. This is the same as the "hemi" option but running on the 'light' queue.
 * Added to param.arq a new option "resume=yes/no". If a simulation stopped this option will use the 
-#	"-append -cpi JobName.cpt" to resume the simulation. 
-#	Afterwards, the resume option will be automatically reset back to "no".
+	"-append -cpi JobName.cpt" to resume the simulation. 
+	Afterwards, the resume option will be automatically reset back to "no".
 * Minor change: all mdrun use now the "-deffnm" for default naming. This is transparent and does not affect function.  
 
 Version 	1.06 	27.01.2011
