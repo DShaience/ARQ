@@ -1,5 +1,5 @@
 ### ARQ (NewARQ) - Automatic Re-Qsub (The new version)
-####Auto Re-Qsub for GROMACS - an automation utility script to automate GROMACS simulation submissions, processes, and healthchecks
+Auto Re-Qsub for GROMACS - an automation utility script to automate GROMACS simulation submissions, processes, and healthchecks
 ---------------------------------------------------------------------------
 console> nohup perl mainND.pl &
 Loads param.arq automatically, which should always be in the same working directory as mainND.pl
