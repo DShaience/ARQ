@@ -2,6 +2,7 @@
 Auto Re-Qsub for GROMACS - an automation utility script to automate GROMACS simulation submissions, processes, and healthchecks
 
 #### USAGE: nohup perl mainND.pl &
+Loads param.arq automatically, which should always be in the same working directory as mainND.pl
 Resubmitting GROMACS jobs on a desktop (or server) machine.
 ---------------------------------------------------------------------------
 This script was tested using GROMACS 4.x.x under Linux, and should work great with them. For other versions, it should work,
