@@ -15,6 +15,7 @@ FILE LIST
 ---------------------------------------------------------------------------
 * mainND.pl
 * param.arq
+
 MANDATORY GROMACS FILES (List of gromacs-files required by NewARQ to operate):
 * myrun.tpr
 Since version 2.x no other topology files are needed. Everything is stored in the .tpr file, so it is
