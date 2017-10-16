@@ -39,7 +39,7 @@ Version 	2.01	19.01.2012
   
 Version 	1.11_orte	16.08.2011
 * light doesn't work now. Reverting back to orte module. 
-* This הersion is unsupported.
+* This version is unsupported.
 
 Version 	1.11	2.08.2011
 * Emailing is now written as a function. Current options: -1 (error), 0 (success, but don't email), 1 (simulation starting), 2 (simulation ending)
