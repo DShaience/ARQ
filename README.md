@@ -1,7 +1,6 @@
 ### ARQ (NewARQ) - Automatic Re-Qsub (The new version)
 Auto Re-Qsub for GROMACS - an automation utility script to automate GROMACS simulation submissions, processes, and healthchecks
-
-example: nohup perl mainND.pl &
+console> nohup perl mainND.pl &
 Loads param.arq automatically, which should always be in the same working directory as mainND.pl
 Resubmitting GROMACS jobs on a desktop (or server) machine.
 ---------------------------------------------------------------------------
@@ -11,7 +10,6 @@ Ajusting these lines will make it also easy to use NewARQ if you intend on using
 Previous versions supported running on computer clusters, but with the emergence of cloud computing, this part of the code
 has become obsolete. runtype should ALWAYS be set to desktop
 runtype=Desktop
-
 FILE LIST
 ---------------------------------------------------------------------------
 * mainND.pl
